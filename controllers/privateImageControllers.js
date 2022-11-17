@@ -24,7 +24,7 @@ privateImageControllers = {
         try {
             // get images from db
             try {
-                const features = new APIfeatures(Image.find({ category: 'k16' }), req.query).sorting().paginating()
+                const features = new APIfeatures(Image.find({ category: 'a1-k16' }), req.query).sorting().paginating()
                 const images = await features.query
                 // let images = await Image.find({ category: 'k16' });
 

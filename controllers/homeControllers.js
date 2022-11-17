@@ -24,7 +24,7 @@ const homeControllers = {
     getImages: async (req, res) => {
         try {
             // console.log(req.query)
-            const features = new APIfeatures(Image.find({ category: { $ne: "k16" } }), req.query).sorting().paginating()
+            const features = new APIfeatures(Image.find({ category: { $ne: "a1-k16" } }), req.query).sorting().paginating()
             const images = await features.query
 
             // const images = Image.find({ category: { $ne: "k16" } })
